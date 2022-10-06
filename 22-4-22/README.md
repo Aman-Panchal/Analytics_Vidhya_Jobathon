@@ -29,7 +29,7 @@ Step 5: Building Model
 
 
 
-!<img src=https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png  width="150" height="280">
+!<img src=https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png >
 
 
 ## Install dependecies
