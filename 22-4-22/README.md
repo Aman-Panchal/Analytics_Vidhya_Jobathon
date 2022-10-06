@@ -7,7 +7,7 @@ In recent times, the demand for cars is on the rise. As a result, the company wo
 
 The company has collected the details of each rental. Based on the past data, the company would like to forecast the demand of car rentals on an hourly basis.
 
-![Logo]([https://www.biospectrumasia.com/uploads/articles/cancer_n_ai-10937.jpg](https://cdn1.vectorstock.com/i/1000x1000/86/00/logo-for-car-rental-and-sales-vector-25468600.jpg))
+![Logo](https://cdn1.vectorstock.com/i/1000x1000/86/00/logo-for-car-rental-and-sales-vector-25468600.jpg)
 
 
 ## Aim Of Project :-
@@ -28,7 +28,7 @@ Step 4: Exploratory Data Analysis
 Step 5: Building Model
 
 
-![Logo]([https://cdn-images-1.medium.com/max/1600/1*KzmIUYPmxgEHhXX7SlbP4w.jpeg](https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png))
+![Logo](https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png)
 
 
 
@@ -60,17 +60,27 @@ pip install matplotlib
 3. Use Voting Classifier and use multiple ml algos same time.
 
 ## Steps -
-i) import  numpy,  pandas, matplotlib, datetime, calendar  & sklearn
+i) import  numpy,  pandas, matplotlib, datetime, calendar  & sklearn.
+
 ii) Read both the train and prediction csv.
+
 iii) Check details about data by describe function.
+
 iv) Check if there is any NAN values.
+
 v) Create a separate column fro date, month & year from Datw dd-mm-yy column. 
   - Try to extract season but not succeed.
+  
 vi) Visualize data by diffrent graphs
+
 vii) Split dataset in train & test
+
 viii) Tried multiple ml algos and calculate rmse value.
+
 ix) Select 2 of all ml algos and perform Hyperparameter Tuning by GridSearch.
+
 x) Apply Standard Scaler and use Deep Neural Network.
+
 xi) Use Voting Classifier(knn, XGB, Random Forest) and use multiple ml algos same time.
 
 
