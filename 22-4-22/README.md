@@ -1,63 +1,37 @@
 
-# Heart_disease_prediction-model-
+# Problem Statement
 
-Minor Project of 3rd year
+ABC is a car rental company based out of Bangalore. It rents cars for both in and out stations at affordable prices. The users can rent different types of cars like Sedans, Hatchbacks, SUVs and MUVs, Minivans and so on.
 
-• Objective: To reduce physical interaction in covid build a model that can predict that he/she affected by heart diseases in the future.
+In recent times, the demand for cars is on the rise. As a result, the company would like to tackle the problem of supply and demand. The ultimate goal of the company is to strike the balance between the supply and demand inorder to meet the user expectations.
 
-• Used various parameters age, chest pain type, cholesterol, maximum heart rate, etc. Perform correlation and data preprocessing and data visualization.
+The company has collected the details of each rental. Based on the past data, the company would like to forecast the demand of car rentals on an hourly basis.
 
-• Used Classification algos: Logistic Regression, KNN, SVM, Decision Tree Classifier, and Random Forest Classifier. And KNN outperforms all with 87.91 accuracies. 
-
-![Logo](https://www.biospectrumasia.com/uploads/articles/cancer_n_ai-10937.jpg)
+![Logo]([https://www.biospectrumasia.com/uploads/articles/cancer_n_ai-10937.jpg](https://cdn1.vectorstock.com/i/1000x1000/86/00/logo-for-car-rental-and-sales-vector-25468600.jpg))
 
 
 ## Aim Of Project :-
 
--Our main goal is to predict whether the patient 
-      is suffering  from heart disease or not.
+- forecast the demand of car rentals
 
--For this project we use Heart Disease UCI dataset
-      from Kaggle .
 
 
 ## Approach to solve problem 
-1. Frame the problem
-2. Get the Data
-3. Explore the data to gain insight
-4. Prepare the data for Machine Learning  algorithms 
-5. Explore many different models and short list best one
-6. Fine Tune the model
-7. Present solution
+Step 1: Importing the Relevant Libraries
 
-![Logo](https://cdn-images-1.medium.com/max/1600/1*KzmIUYPmxgEHhXX7SlbP4w.jpeg)
+Step 2: Data Inspection
 
+Step 3: Data Cleaning
 
+Step 4: Exploratory Data Analysis
+
+Step 5: Building Model
 
 
- ## Problems :  Heart Disease a rising killer 
- 
--In India, about 45 million people suffer from coronary artery disease.
-
--Death rate due to cardiovascular  disease is rose by around  34% from  155.7 to 209.1 per 1lakh  from 1990 to 2016.
-
--India has  1 doctor in 1445 patient.
-
--According to NITI Aayog India has 6 lakh  shortfall of doctors.
-
--In rural 70 % people live and doctors are 1/4 of urban area.
-     
-         India will soon bear the largest burden of heart disease globally
+![Logo]([https://cdn-images-1.medium.com/max/1600/1*KzmIUYPmxgEHhXX7SlbP4w.jpeg](https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png))
 
 
-## Facts of Heart Disease
 
-![Logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-dbvf4io31b_GzsSjhuU-wHaGE%26pid%3DApi&f=1)
-
-![Logo](https://thumbnails-visually.netdna-ssl.com/heart-health_57171b0c5e9cf.jpg)
-
-![](http://indpaedia.com/ind/images/f/f9/The_ten_top_causes_of_death_in_India%2C_2005-15.jpg)
- 
 ## Install dependecies
 numpy 
 ```
@@ -72,73 +46,45 @@ matplotlib
 pip install matplotlib
 ```
 
-## Get the Data: The Heart Disease(UCI) dataset which we had used in our project is taken from kaggle.
+## Features of dataset:
 
 | Features |
 | :-------- |
-| `Age` |
-| `Sex` |
-| `Chest pain type` |
-| `Blood pressure ` |
-| `Electrocardiographic(ecg) report ` |
-| `Heart rate` |
+| `Date` |
+| `Hour` |
+| `Demand` |
+
+## Approaches:-
+1. Apply multiple ML algorithms get there RMSE value and Select 2 of them and perform Hyperparameter Tuning.
+2. Use concepts of Deep Learning.
+3. Use Voting Classifier and use multiple ml algos same time.
+
+## Steps -
+i) import  numpy,  pandas, matplotlib, datetime, calendar  & sklearn
+ii) Read both the train and prediction csv.
+iii) Check details about data by describe function.
+iv) Check if there is any NAN values.
+v) Create a separate column fro date, month & year from Datw dd-mm-yy column. 
+  - Try to extract season but not succeed.
+vi) Visualize data by diffrent graphs
+vii) Split dataset in train & test
+viii) Tried multiple ml algos and calculate rmse value.
+ix) Select 2 of all ml algos and perform Hyperparameter Tuning by GridSearch.
+x) Apply Standard Scaler and use Deep Neural Network.
+xi) Use Voting Classifier(knn, XGB, Random Forest) and use multiple ml algos same time.
+
+
 
 ## Result
 
-|    |**Model** | **Training Accuracy %**    | **Testing Accuracy %**             |
+|    |**Model** | **RMSE train**    | **RMSE test %**             |
 | :- | :-------- | :------- | :------------------------- |
-| 1| `Tuned Logistic Regression` | 85.85 |  	85.71|
-| 2|`Tuned K-nearest neighbors` | 81.13 |  	87.91 |
-| 3|`Tuned Support Vector Machine` | 87.74 |  	84.62 |
-| 4 |`Tuned Decision Tree Classifier` |  	91.51 | 76.92|
+| 1| `Random Forest` | 12.7492 |  	33.7474 |
+| 2|`SVR` | 38.3123 |  36.9523 |
+| 3|`XGB` | 35.1130 |  	34.250 |
+| 4 |`DNN` |  	41.03 | 41.68|
+| 5 |`Voting Classifier` |  	32.56 | 34.00|
 
-
-## Advantage & Disadvantage
-Advantage:
-
--Increase availability to patient.
-
--Available to 14 hours and 7 week.
-
--Less costly.
-
-Disadvantage:
-
--Not for emergency patient.
-
-
-## SOFTWARE & HARDWARE REQUIREMENT : 
-
-**Software**
-
-•	OS: Windows 7 or above 
-
-•	Programming language: python 3.6 
-
-•	IDE: Anaconda prompt
-
-•	Dependencies: numpy 
-
-•	Libraries: panda,  sklearn,  matplotlib,  seaborn
-
-
-
-**Hardware**
-
-•	Processor: i5 or above 
-
-•	RAM: 8 GB 
-
-•	Hard Disk: 160 GB 
-
-
-
-## Future Scope
-1. Create a website. 
-
-2. Then create database of doctors and patient, than suggest the contact no. is passed of nearest doctor to him.
-
-3. Also prescript medicine to patient.
 
 
 
