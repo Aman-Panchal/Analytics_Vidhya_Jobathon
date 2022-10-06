@@ -7,7 +7,7 @@ In recent times, the demand for cars is on the rise. As a result, the company wo
 
 The company has collected the details of each rental. Based on the past data, the company would like to forecast the demand of car rentals on an hourly basis.
 
-![Logo](https://cdn1.vectorstock.com/i/1000x1000/86/00/logo-for-car-rental-and-sales-vector-25468600.jpg)
+!<img src=https://cdn1.vectorstock.com/i/1000x1000/86/00/logo-for-car-rental-and-sales-vector-25468600.jpg  width="150" height="280">
 
 
 ## Aim Of Project :-
@@ -28,8 +28,8 @@ Step 4: Exploratory Data Analysis
 Step 5: Building Model
 
 
-![Logo](https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png)
 
+!<img src=https://www.favouriteblog.com/wp-content/uploads/2017/07/Machine-Learning-Process.png  width="150" height="280">
 
 
 ## Install dependecies
@@ -48,11 +48,11 @@ pip install matplotlib
 
 ## Features of dataset:
 
-| Features |
-| :-------- |
-| `Date` |
-| `Hour` |
-| `Demand` |
+| Features | Data |
+| :-------- |:-------- |
+| `Date` | `Date in yyyy-mm-dd format` |
+| `Hour` | `Particular time and hours of demand` |
+| `Demand` | `Demand of the product` |
 
 ## Approaches:-
 1. Apply multiple ML algorithms get there RMSE value and Select 2 of them and perform Hyperparameter Tuning.
